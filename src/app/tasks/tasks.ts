@@ -2,6 +2,7 @@ import { Component,input,Input } from '@angular/core';
 import {  Task } from './task/task';
 import { required } from '@angular/forms/signals';
 import { NewTask } from './new-task/new-task';
+import { NewTaskData } from './task.model';
 
 @Component({
   selector: 'app-tasks',
@@ -60,4 +61,9 @@ export class Tasks {
   onCancelAddTask(){
     this.isAddingTask = false;
   }
+
+  onAddTask(taskData: NewTaskData){
+}
+
+
 }
