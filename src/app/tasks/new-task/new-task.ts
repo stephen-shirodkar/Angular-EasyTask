@@ -1,10 +1,7 @@
 import { Component, EventEmitter, Output, signal} from '@angular/core';
 import { FormsModule } from '@angular/forms';
-interface NewTaskData {
-  title: string;
-  summary: string;
-  dueDate: string;
-}
+import { type NewTaskData } from '../task.model';
+
 @Component({
   selector: 'app-new-task',
   imports: [FormsModule],

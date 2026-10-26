@@ -63,7 +63,13 @@ export class Tasks {
   }
 
   onAddTask(taskData: NewTaskData){
-}
-
-
+    this.tasks.push({
+      id: new Date().getTime().toString(),
+      userId: this.userId,
+      title: taskData.title,
+      summary: taskData.summary,
+      dueDate: taskData.dueDate
+    });
+    this.isAddingTask = false;
+  }
 }

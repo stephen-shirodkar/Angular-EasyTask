@@ -1,26 +1,18 @@
-div {
-  width: 200%;
-  border-radius: 20px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin-left: -120%;
-  margin-top: 1rem;
-}
-
 button {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  padding: 0.35rem 0.5rem;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
   background-color: #433352;
   color: #c3b3d1;
   border: none;
   font: inherit;
   cursor: pointer;
   width: 100%;
-  min-width: 10rem;
+  min-width: 12rem;
+  box-sizing: border-box;
   text-align: left;
-  height: 70px;
+  height: 80px;
 }
 
 button:hover,
@@ -31,7 +23,9 @@ button:active,
 }
 
 img {
-  width: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
@@ -40,6 +34,6 @@ img {
 span {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }

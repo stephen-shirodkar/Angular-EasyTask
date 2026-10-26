@@ -1,14 +1,17 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Card } from '../../shared/card/card';
+import {DatePipe} from '@angular/common';
+
 interface TaskType {
-  id: String;
-  userId: String;
-  title: String;
-  dueDate: String;
-  summary: String;
+  id: string;
+  userId: string;
+  title: string;
+  dueDate: string;
+  summary: string;
 }
 @Component({
   selector: 'app-task',
-  imports: [],
+  imports: [Card,DatePipe],
   templateUrl: './task.html',
   styleUrl: './task.css',
 })
